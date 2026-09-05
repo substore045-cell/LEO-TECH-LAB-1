@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23070709' stroke='%23D4AF37' stroke-width='2'/%3E%3Cpath d='M22 18 V46 H42' fill='none' stroke='%23D4AF37' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpolygon points='46,20 48,25 53,27 48,29 46,34 44,29 39,27 44,25' fill='%23FFE866'/%3E%3C/svg%3E" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leo Tech Lab — Premium Subscription Store</title>
+    <meta name="description" content="Get premium subscriptions and digital tools at affordable wholesale prices. ChatGPT Plus, Netflix 4K, Canva Pro, JetBrains, NordVPN and more from Leo Tech Lab." />
+    <meta name="theme-color" content="#070709" />
+    
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://leotechlab.com/" />
+    <meta property="og:title" content="Leo Tech Lab — Premium Subscription Store" />
+    <meta property="og:description" content="Buy affordable premium subscriptions for ChatGPT Plus, Canva Pro, Netflix 4K, JetBrains, NordVPN and more with instant WhatsApp delivery." />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=1200&auto=format&fit=crop&q=80" />
+    <meta property="og:site_name" content="Leo Tech Lab" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Leo Tech Lab — Premium Subscription Store" />
+    <meta name="twitter:description" content="Buy affordable premium subscriptions for ChatGPT Plus, Canva Pro, Netflix 4K, JetBrains, NordVPN and more with instant WhatsApp delivery." />
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=1200&auto=format&fit=crop&q=80" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <!-- Anti-flicker theme initialization -->
+    <script>
+      (function() {
+        try {
+          var saved = localStorage.getItem('leo_tech_theme');
+          var prefersLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
+          if (saved === 'light' || (!saved && prefersLight)) {
+            document.documentElement.classList.remove('dark');
+            document.documentElement.classList.add('light');
+            document.documentElement.setAttribute('data-theme', 'light');
+          } else {
+            document.documentElement.classList.remove('light');
+            document.documentElement.classList.add('dark');
+            document.documentElement.setAttribute('data-theme', 'dark');
+          }
+        } catch(e) {}
+      })();
+    </script>
+  </head>
+  <body class="bg-dark-950 text-gray-100 font-sans antialiased selection:bg-gold-500 selection:text-dark-950 min-h-screen">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
